@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <feature name="android.hardware.nfc" />
+    <feature name="android.hardware.nfc.hce" />
+    <feature name="android.hardware.nfc.hcef" />
+    <feature name="android.hardware.nfc.ese" />
+    <feature name="android.hardware.se.omapi.ese" />
+</permissions>

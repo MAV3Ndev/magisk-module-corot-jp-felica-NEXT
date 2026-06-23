@@ -1,0 +1,26 @@
+package com.google.android.gms.internal.common;
+
+import java.util.ListIterator;
+import org.jspecify.annotations.NullMarked;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.5.0 */
+/* JADX INFO: loaded from: classes3.dex */
+@NullMarked
+public abstract class zzao extends zzan implements ListIterator {
+    protected zzao() {
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // java.util.ListIterator
+    @Deprecated
+    public final void add(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // java.util.ListIterator
+    @Deprecated
+    public final void set(Object obj) {
+        throw new UnsupportedOperationException();
+    }
+}

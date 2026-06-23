@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_layout_pressed"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/service_icon"
+        android:layout_width="84dp"
+        android:layout_height="52dp"
+        android:elevation="1dp"/>
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="0dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:ellipsize="end"
+        android:id="@+id/service_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:includeFontPadding="false"
+        android:layout_weight="1"
+        style="@style/style_13_bold_black"/>
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="0dp"/>
+</LinearLayout>

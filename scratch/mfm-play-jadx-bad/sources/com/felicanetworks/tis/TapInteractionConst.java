@@ -1,0 +1,54 @@
+package com.felicanetworks.tis;
+
+/* JADX INFO: loaded from: classes3.dex */
+public class TapInteractionConst {
+    public static final String ACTION_NOTIFICATION_SETTING = "com.felicanetworks.tis.action.NOTIFICATION_SETTING";
+    public static final String ACTION_STOP_CHIP_ACCESS_SETTING = "com.felicanetworks.tis.action.STOP_CHIP_ACCESS_SETTING";
+    public static final String ACTION_TAPINTERACTION_INFO_EVENT = "com.felicanetworks.tis.action.TAPINTERACTION_INFO_EVENT";
+    public static final String EDY_LINK_SERVICE_ID = "SV000013";
+    public static final String EDY_MENU_APP_SERVICE_ID = "SV000013";
+    public static final String EXTRA_KEY_NOTIFICATION_SETTING = "com.felicanetworks.tis.EXTRA_SETTING";
+    public static final String EXTRA_KEY_STOP_CHIP_ACCESS_SETTING = "com.felicanetworks.tis.EXTRA_STOP_CHIP_ACCESS_SETTING";
+    public static final String EXTRA_KEY_TAPINTERACTION_INFO_EVENT = "eventJson";
+    public static final String ICOCA_LINK_SERVICE_ID = "SV000271";
+    public static final String ICOCA_MENU_APP_SERVICE_ID = "SV000271";
+    public static final String ID_LINK_SERVICE_ID = "SV000006";
+    public static final String ID_MENU_APP_SERVICE_ID = "SV000006";
+    public static final int LINK_INFO_APP_HASH_POS = 3;
+    public static final int LINK_INFO_PACKAGE_NAME_POS = 1;
+    public static final int LINK_INFO_RECEIVER_NAME_POS = 2;
+    public static final int LINK_INFO_SERVICE_ID_POS = 0;
+    static final int MAX_TRANSACTION_COUNT = 100;
+    public static final String MENU_PACKAGE_NAME = "com.felicanetworks.mfm.main";
+    public static final String MFM_DATABASE_CONTENT_PROVIDER_AUTHORITY = "content://com.felicanetworks.mfm.main.model.internal.main.db";
+    public static final String NANACO_LINK_SERVICE_ID = "SV000075";
+    public static final String NANACO_MENU_APP_SERVICE_ID = "SV000075";
+    public static final boolean NOTIFICATION_DISPLAY_DEFAULT = true;
+    public static final String NOTIFICATION_DISPLAY_MODE_DEFAULT = "notice";
+    public static final String PASMO_LINK_SERVICE_ID = "SV000253";
+    public static final String PASMO_MENU_APP_SERVICE_ID = "SV000253";
+    public static final String PREF_FILE_NAME = "mfi_ti_setting";
+    public static final String PREF_KEY_NOTIFICATION_DISPLAY = "ti_notification_display";
+    public static final String PREF_KEY_NOTIFICATION_DISPLAY_MODE = "ti_notification_display_mode";
+    public static final String PREF_KEY_STOP_CHIP_ACCESS = "ti_stop_chip_access";
+    public static final String QUIC_PAY_LINK_SERVICE_ID = "SV000024";
+    public static final String QUIC_PAY_MENU_APP_SERVICE_ID = "SV000024";
+    public static final String SHARED_PREFERENCE_PROVIDER_AUTHORITY = "com.felicanetworks.tis.SharedPreferenceProvider";
+    public static final boolean STOP_CHIP_ACCESS_DEFAULT = false;
+    public static final String SUICA_DEFAULT_CARD_ID = "D00000000000000000000000000000000000000000000000000000000000001";
+    public static final String SUICA_LINK_SERVICE_ID = "SV000027";
+    public static final String SUICA_MENU_APP_SERVICE_ID = "SV000027";
+    public static final String TEST_LINK_SERVICE_ID = "";
+    public static final String TEST_MENU_APP_SERVICE_ID = "";
+    public static final String TOICA_LINK_SERVICE_ID = "SV000276";
+    public static final String TOICA_MENU_APP_SERVICE_ID = "SV000276";
+    public static final String WAON_LINK_SERVICE_ID = "SV000011";
+    public static final String WAON_MENU_APP_SERVICE_ID = "SV000011";
+    static final byte[] TRANSACTION_MANAGEMENT_AID = {-96, 0, 0, 6, -128, 2, 0, 0, 0, 3, 0, 0, 0, 2, 0, 0};
+    static final byte[] GET_TRANSACTION_INFO_COMMAND_NORMAL = {-128, -54, 1, 0, 0};
+    static final byte[] GET_TRANSACTION_INFO_COMMAND_RETRY = {-128, -54, 1, 1, 0};
+    static final byte[] GET_TRANSACTION_INFO_COMMAND_CLEAR = {-128, -54, 1, 2, 0};
+    public static final String[] GOOGLE_WALLET_LINK_SERVICE_ID = {"SV000013", "SV000011", "SV000075", "SV000006", "SV000024", "SV000027", "SV000253"};
+    public static final String[][] SP_APPLICATION_LINK_INFO = {new String[]{"SV000013", "jp.co.rakuten.pay", "jp.co.rakuten.pay.EdyTapInteractionBroadcastReceiver", "852e79e8d7f391d4ecad83f756756e5e6cd5f534cdd0b92bcf8b9c0b4ddf05a6"}};
+    static final String[] MFC_PERMITS = {"MIICFDCCAQsWBDAwMDEWAjAyFgYwMDAwMDAWDFNOMDAwMDAwMjI0NRYEMDAwMDAqGBMyMDE4MDIxMzAwMDAwMCswOTAwGBMyMDk5MTIzMTIzNTk1OSswOTAwFghTVjAwMDAwMxYzaHR0cHM6Ly9tcy5mbm9wZi5qcC93cy9yZXZvY2F0aW9uP2s9MDImaT0xMDAwMDEmbj0xMHgwEhYEMDAwMQQKMAgWBjEwMDAwMTA0FgQwMDAyBCwwKgQCAAMEAgAHMCAwHhYERkZGRjAWMBQWCDAwMDAwMDAwFggwMDAwRkZGRjAsFgQwMDA0BCQwIgQgvlHb9P7Im9MoRkV7E7cwCHavVZTSh03uAmkEllrkpssDggEBAD9X7oKXDteT4z189KCzhadMH8ctAoa373gFKTIUjSpDwpUNKD9vHxRGIMAe67VrvGFI+UMMRERRneGrWRLBESsJAguldmRMXL4rNVuqqotIdDJ9UTDwbwVQEW5yyodldI4XdYs/EYkUfgGfzs0NVSAnAttGwCtd4c/fMb9XlDIOOkLUNvcCcQtIwoHSxhgr6yu4AoJmbci1lKx0Js0Nn0zEVSTc7qLw+7OOo/pESdra7jM3GJF6aldAFQlDOfzMXnE7JaIwoE0Vgb9/BW4HH190OTKRIQ6Ql5kUN83ciYft1nwMEwGnt1XTOGhgwukdA/Q1c2AfKgjG8eyTUH8B+Wg=", "MIICFDCCAQsWBDAwMDEWAjAyFgYwMDAwMDAWDFNOMDAwMDAwMjI0NhYEMDAwMDAqGBMyMDE4MDIxMzAwMDAwMCswOTAwGBMyMDk5MTIzMTIzNTk1OSswOTAwFghTVjAwMDAwMxYzaHR0cHM6Ly9tcy5mbm9wZi5qcC93cy9yZXZvY2F0aW9uP2s9MDImaT0xMDAwMDImbj0xMHgwEhYEMDAwMQQKMAgWBjEwMDAwMjA0FgQwMDAyBCwwKgQCAAMEAgAHMCAwHhYERkZGRjAWMBQWCDAwMDAwMDAwFggwMDAwRkZGRjAsFgQwMDA0BCQwIgQgvlHb9P7Im9MoRkV7E7cwCHavVZTSh03uAmkEllrkpssDggEBAFx4BfoZqIH5uPdoya/RHbVWe7cWEaFb2gQJn1Dd9CkTt3xxFusmAGOWNbC7a6PTirZuP8nhYM2t0Qj8rqNnUofdhjKZpJ3wXl2oYgUcgFLPmk4/1fASPDOS5RSddwHFeJkGACU7wb+8ZmfdvRxsowqlPN3ynUVokJXDQP98q4uMQphe8QsCtbx1ASkd+EclfKYwvY5StB0m/6XIeayFnQmqGzUAMzmgS3L9wEhczN7QFeF2MpoRXECT1H0yXVZ2nGqKmX0ca7cBDFW9tlAsx4viSJB03mtUVY5Mu8TXMlIThDpDASQVjVAuRK77dlpLra/dqA8RUkl0GJyslPPQqjI=", "MIICFDCCAQsWBDAwMDEWAjAyFgYwMDAwMDAWDFNOMDAwMDAwMjI0NxYEMDAwMDAqGBMyMDE4MDIxMzAwMDAwMCswOTAwGBMyMDk5MTIzMTIzNTk1OSswOTAwFghTVjAwMDAwMxYzaHR0cHM6Ly9tcy5mbm9wZi5qcC93cy9yZXZvY2F0aW9uP2s9MDImaT0xMDAwMDMmbj0xMHgwEhYEMDAwMQQKMAgWBjEwMDAwMzA0FgQwMDAyBCwwKgQCAAMEAgAHMCAwHhYERkZGRjAWMBQWCDAwMDAwMDAwFggwMDAwRkZGRjAsFgQwMDA0BCQwIgQgvlHb9P7Im9MoRkV7E7cwCHavVZTSh03uAmkEllrkpssDggEBANBYe1hYiCx1uiLYyweSYTqvSkWNzXjld7sk8Zm5XamQSrwaPSxRYwRE15jmBZAhS+dg+JY3fj0ltE9YkXg4HCmVYc6IegqaKM5VtTIzQQXRvamYla/voIVZhx39HemZVnplzeqjtSxZ2occNcFdsLR2kfkaQ2L6xaq97573MhYFWDUz1xp/M5UjUlwglFBmjmY3mFuehjaQTDidiFgEr4HanRC1jTzVcXr/z8pK21ut5ehTavGNl1iUxOukSISJpEEJbJOO0LCpdTAKE7TlAc2PCCEEbX6N0kjZmc6FQeMYDWl+ryDUQEP46c0FufSEEXeKW1lGAyf8+j9KTCnTfpc=", "MIICFDCCAQsWBDAwMDEWAjAyFgYwMDAwMDAWDFNOMDAwMDAwMjI0OBYEMDAwMDAqGBMyMDE4MDIxMzAwMDAwMCswOTAwGBMyMDk5MTIzMTIzNTk1OSswOTAwFghTVjAwMDAwMxYzaHR0cHM6Ly9tcy5mbm9wZi5qcC93cy9yZXZvY2F0aW9uP2s9MDImaT0xMDAwMDcmbj0xMHgwEhYEMDAwMQQKMAgWBjEwMDAwNzA0FgQwMDAyBCwwKgQCAAMEAgAHMCAwHhYERkZGRjAWMBQWCDAwMDAwMDAwFggwMDAwRkZGRjAsFgQwMDA0BCQwIgQgvlHb9P7Im9MoRkV7E7cwCHavVZTSh03uAmkEllrkpssDggEBAH2Xf9Vn4Hhpf+lcwN3/k5pRQoSze+a2lBi9EHHn4+EAof/ydXBGTI4UXPq5iGECQyk9NIKLtMNEWf5JgWwnpg/E9RDkcLk0yiS6h+mA52P+LrfvwRqGrmEsLQJJKHyQcbNmIZuJlpITUhSTCL778D+D8fYplix1PM9j8mN8729ofcryjEhoOYJaY8i0z65T6yXHOSVRhVshEqr7TpNt4zbKDnIvflZcwu9xfHKgdTxFh+y9uxPz+KR6lMBYvTJRNBW4o+lmYlyUOCUVTj0Y2erqebksztZCq4pcKKC793wMKv7uzYZHV8UInNFXafRu6usCPy38J62M3dfR8hnz45U=", "MIICFDCCAQsWBDAwMDEWAjAyFgYwMDAwMDAWDFNOMDAwMDAwMjI0ORYEMDAwMDAqGBMyMDE4MDIxMzAwMDAwMCswOTAwGBMyMDk5MTIzMTIzNTk1OSswOTAwFghTVjAwMDAwMxYzaHR0cHM6Ly9tcy5mbm9wZi5qcC93cy9yZXZvY2F0aW9uP2s9MDImaT0xMDAwMDgmbj0xMHgwEhYEMDAwMQQKMAgWBjEwMDAwODA0FgQwMDAyBCwwKgQCAAMEAgAHMCAwHhYERkZGRjAWMBQWCDAwMDAwMDAwFggwMDAwRkZGRjAsFgQwMDA0BCQwIgQgvlHb9P7Im9MoRkV7E7cwCHavVZTSh03uAmkEllrkpssDggEBAMPhlZP8snIEouXABzHDlycz61m7H8tZsUAqLZJ+WRjAe4wY7i48Z6+BkMHnxA5IU5bJZpaRRngdR95DQzAuBrRWiK4RZuos9M3ifqzYu005uabxTzfkI3AjAumCzDyaghgbqJhGGBgWvID1qUdBZVbdUzr+v8c+2OYznb8Xl4G+v7OkgyPEt+3AIOXw/nwZQ84CxgpsxFIiQ/LaFR0EOXityWIxXlSZrNbv7NnipC7qgmOvTHNDz1l8kUDpmYpWbeYy9pt624QrPDp4o8vEX/3G467rFDwWPYHQXA+38BeOeb1lXdVepiLyS3fjS8pjN2kFGktLBOqZxhqL2f4F66M="};
+}

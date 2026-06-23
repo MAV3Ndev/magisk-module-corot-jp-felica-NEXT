@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_prefixes">
+    </array>
+    <array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </array>
+    <array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </array>
+    <array name="sg_02030398">
+        <item>https://ms.fnopf.jp/mfm/bn/01/02/100001/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/01/02/100002/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/01/02/100003/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/01/02/100008/</item>
+    </array>
+    <array name="sg_02030399">
+        <item>https://ms.fnopf.jp/mfm/bn/02/02/100001/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/02/02/100002/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/02/02/100003/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/02/02/100008/</item>
+    </array>
+    <array name="sg_020303A5">
+        <item>ms.fnopf.jp</item>
+        <item>ap.pitsquare.jp</item>
+        <item>www.felicanetworks.co.jp</item>
+        <item>osaifu.nttdocomo.co.jp</item>
+        <item>play.google.com</item>
+        <item>support.google.com</item>
+        <item>faq.nttdocomo.co.jp</item>
+        <item>faq.nttdocomo.com</item>
+        <item>www.nttdocomo.co.jp</item>
+        <item>www.nttdocomo.com</item>
+        <item>www.au.com</item>
+        <item>www.softbank.jp</item>
+    </array>
+    <array name="sg_02030404">
+        <item>http://osaifu.nttdocomo.co.jp/other/terms.html</item>
+        <item />
+        <item />
+        <item />
+    </array>
+    <array name="sg_02030498">
+        <item>file:///android_asset/d/en/setting_tos.html</item>
+        <item>file:///android_asset/k/en/setting_tos.html</item>
+        <item>file:///android_asset/s/en/setting_tos.html</item>
+        <item>file:///android_asset/fn/en/setting_tos.html</item>
+    </array>
+    <array name="sg_02030499">
+        <item>Accept the Terms of Service and User Agreement for Osaifu-Keitai application, handling of personal information defined in them, and Osaifu-Keitai Usage Regulations. Then setup IC card.</item>
+        <item>Accept the Terms of Service and User Agreement for Osaifu-Keitai application and handling of personal information defined in them. Then setup Osaifu-Keitai.</item>
+        <item>Accept the Terms of Service and User Agreement for Osaifu-Keitai application and handling of personal information defined in them. Then setup Osaifu-Keitai.</item>
+        <item>Accept the Terms of Service and User Agreement for Osaifu-Keitai application and handling of personal information defined in them. Then setup Osaifu-Keitai.</item>
+    </array>
+    <array name="sg_02030903">
+        <item>/product/etc/felica/</item>
+        <item>/vendor/etc/felica/</item>
+        <item>/system/etc/felica/</item>
+    </array>
+    <array name="sg_020309B4">
+        <item>FN00000001</item>
+        <item>FN00000002</item>
+        <item>FN00000003</item>
+    </array>
+    <array name="sg_020309B5">
+        <item>おサイフケータイなら便利な機能がもりだくさん！</item>
+        <item>おサイフケータイなら便利な機能がもりだくさん！</item>
+        <item>おサイフケータイなら便利な機能がもりだくさん！</item>
+    </array>
+    <array name="sg_020309B6">
+        <item>sg_guidance_fn00000001</item>
+        <item>sg_guidance_fn00000002</item>
+        <item>sg_guidance_fn00000003</item>
+    </array>
+    <array name="sg_020309CD">
+        <item>SV000013</item>
+        <item>SV000027</item>
+        <item>SV000075</item>
+        <item>SV000011</item>
+        <item>SV000006</item>
+        <item>SV000024</item>
+        <item>SV000253</item>
+        <item>SV000271</item>
+        <item>SV000276</item>
+        <item>SV000278</item>
+    </array>
+    <array name="sg_020309CE">
+        <item>SV000027</item>
+        <item>SV000253</item>
+        <item>SV000271</item>
+        <item>SV000276</item>
+        <item>SV000278</item>
+    </array>
+    <array name="sg_02030E01">
+        <item>http://osaifu.nttdocomo.co.jp/other/terms.html</item>
+        <item>https://www.au.com/mobile/service/osaifu/support/caution/</item>
+        <item>https://www.softbank.jp/mobile/set/common/pdf/legal/spguide/common/sp_web_kiyaku.pdf#page=5</item>
+        <item>https://ap.pitsquare.jp/osaifu/pc/osaifukeitai_app/kiyaku/erasedata_kiyaku_g.html</item>
+    </array>
+    <array name="sg_02030E02">
+        <item>Please read the Terms of Service and User Agreement before erasing data for Osaifu-Keitai services.</item>
+        <item>Please read the Terms of Service and User Agreement before erasing data for Osaifu-Keitai services.</item>
+        <item>Please read the Terms of Service and User Agreement before erasing data for Osaifu-Keitai services.</item>
+        <item>Please read the Terms of Service and User Agreement before erasing data for Osaifu-Keitai services.</item>
+    </array>
+    <array name="sg_02030E03">
+        <item>Terms of Service and User Agreement</item>
+        <item>Terms of Service and User Agreement</item>
+        <item>Terms of Service and User Agreement</item>
+        <item>Terms of Service and User Agreement</item>
+    </array>
+</resources>

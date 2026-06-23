@@ -1,0 +1,28 @@
+package com.google.android.gms.internal.p001authapiphone;
+
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.common.api.internal.IStatusCallback;
+import com.google.android.gms.common.api.internal.TaskUtil;
+import com.google.android.gms.common.internal.ApiExceptionUtil;
+import com.google.android.gms.tasks.TaskCompletionSource;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
+/* JADX INFO: loaded from: classes3.dex */
+final class zzo extends IStatusCallback.Stub {
+    final /* synthetic */ TaskCompletionSource zza;
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    zzo(zzr zzrVar, TaskCompletionSource taskCompletionSource) {
+        this.zza = taskCompletionSource;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // com.google.android.gms.common.api.internal.IStatusCallback
+    public final void onResult(Status status) {
+        if (status.getStatusCode() == 6) {
+            this.zza.trySetException(ApiExceptionUtil.fromStatus(status));
+        } else {
+            TaskUtil.setResultOrApiException(status, this.zza);
+        }
+    }
+}

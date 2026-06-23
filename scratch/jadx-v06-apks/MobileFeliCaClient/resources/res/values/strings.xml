@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobile FeliCa Client</string>
+    <string name="channel_name">Mobile FeliCa Client</string>
+    <string name="mfc_app_running_notification_text">Tap for more information.</string>
+    <string name="mfc_app_running_notification_title">Mobile FeliCa Client is running.</string>
+    <string name="permission_desc">Allow this application to use \"Osaifu-Keitai\" function</string>
+    <string name="permission_group_desc">Allow this application to use \"Osaifu-Keitai\" function</string>
+    <string name="permission_group_label">Osaifu-Keitai</string>
+    <string name="permission_label">Use \"Osaifu-Keitai\" function.</string>
+</resources>

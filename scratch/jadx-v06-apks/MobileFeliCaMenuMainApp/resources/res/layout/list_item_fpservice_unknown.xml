@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="end"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:id="@+id/ll_unknown_fp_service_item"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="24dp">
+        <LinearLayout
+            android:layout_gravity="bottom|right"
+            android:id="@+id/ll_serice_id_area"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp">
+            <TextView
+                android:textSize="11dp"
+                android:textColor="@color/textcolor_secondary"
+                android:ellipsize="end"
+                android:gravity="bottom|right"
+                android:id="@+id/tv_unknown_service_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

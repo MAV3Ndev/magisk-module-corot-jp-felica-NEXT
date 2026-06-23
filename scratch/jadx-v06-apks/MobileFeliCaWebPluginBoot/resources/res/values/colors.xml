@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bgcolor">#ffe5e5e5</color>
+    <color name="black">#ff000000</color>
+    <color name="bright_foreground_light">#ff000000</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+    <color name="details_title_bgcolor">#80cccccc</color>
+    <color name="dialog_bgcolor">#ffdddddd</color>
+    <color name="gray">#ff333333</color>
+    <color name="text_color_normal">#ff000000</color>
+    <color name="text_color_pressed">#ffffffff</color>
+    <color name="text_color_privacy">#ff777777</color>
+    <color name="text_color_selected">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/disable_card_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/selectable"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_item_text_setting_not_complete"
+            app:layout_constraintBottom_toTopOf="@+id/registerButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            style="@style/style_12_bold_white"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:gravity="center"
+            android:id="@+id/registerButton"
+            android:background="@drawable/button_abnormal"
+            android:layout_width="144dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/card_item_text_now_setting"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/messageText"
+            app:layout_constraintVertical_chainStyle="packed"
+            style="@style/style_14_bold_EF6E00"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/closeButton"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/presence_offline"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

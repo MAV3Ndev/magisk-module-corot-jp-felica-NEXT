@@ -1,0 +1,49 @@
+package com.amazonaws.auth;
+
+import androidx.credentials.exceptions.publickeycredential.DomExceptionUtils;
+import com.amazonaws.AmazonClientException;
+import java.io.IOException;
+import java.io.InputStream;
+
+/* JADX INFO: loaded from: classes.dex */
+@Deprecated
+public class ClasspathPropertiesFileCredentialsProvider implements AWSCredentialsProvider {
+    private static String defaultPropertiesFile = "AwsCredentials.properties";
+    private final String credentialsFilePath;
+
+    @Override // com.amazonaws.auth.AWSCredentialsProvider
+    public void refresh() {
+    }
+
+    public ClasspathPropertiesFileCredentialsProvider() {
+        this(defaultPropertiesFile);
+    }
+
+    public ClasspathPropertiesFileCredentialsProvider(String str) {
+        if (str == null) {
+            throw new IllegalArgumentException("Credentials file path cannot be null");
+        }
+        if (!str.startsWith(DomExceptionUtils.SEPARATOR)) {
+            this.credentialsFilePath = DomExceptionUtils.SEPARATOR + str;
+            return;
+        }
+        this.credentialsFilePath = str;
+    }
+
+    @Override // com.amazonaws.auth.AWSCredentialsProvider
+    public AWSCredentials getCredentials() {
+        InputStream resourceAsStream = getClass().getResourceAsStream(this.credentialsFilePath);
+        if (resourceAsStream == null) {
+            throw new AmazonClientException("Unable to load AWS credentials from the " + this.credentialsFilePath + " file on the classpath");
+        }
+        try {
+            return new PropertiesCredentials(resourceAsStream);
+        } catch (IOException e) {
+            throw new AmazonClientException("Unable to load AWS credentials from the " + this.credentialsFilePath + " file on the classpath", e);
+        }
+    }
+
+    public String toString() {
+        return getClass().getSimpleName() + "(" + this.credentialsFilePath + ")";
+    }
+}

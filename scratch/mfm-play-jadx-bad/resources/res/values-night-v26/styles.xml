@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SudBaseThemeGlif_Light" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/sud_glif_background_color_dark</item>
+        <item name="android:listPreferredItemHeight">@dimen/sud_items_preferred_height</item>
+        <item name="android:textColorLink">@color/sud_color_accent_glif_dark</item>
+        <item name="android:windowAnimationStyle">@style/Animation.SudWindowAnimation</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowSoftInputMode">0x10</item>
+        <item name="android:textAppearanceListItemSmall">?attr/textAppearanceListItemSmall</item>
+        <item name="android:indeterminateTint">?attr/colorControlActivated</item>
+        <item name="android:indeterminateTintMode">5</item>
+        <item name="android:colorError">@color/sud_color_error_text_dark</item>
+        <item name="colorAccent">@color/sud_color_accent_glif_dark</item>
+        <item name="colorPrimary">?attr/colorAccent</item>
+        <item name="colorPrimaryDark">@color/sud_glif_background_color_dark</item>
+        <item name="textAppearanceListItem">@style/TextAppearance.SudGlifItemTitle</item>
+        <item name="textAppearanceListItemSmall">@style/TextAppearance.SudGlifItemSummary</item>
+    </style>
+</resources>

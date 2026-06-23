@@ -1,0 +1,178 @@
+0:46 com.google.firebase:firebase-installations-interop
+0:46 Privacy Sandbox for Ad Services
+48:31 AWS SDK for Android - AWS Mobile Client
+0:46 Annotation
+0:46 Material Components for Android
+0:46 Android Lifecycle ViewModel
+48:31 AWS SDK for Android - Amazon Cognito Identity Provider
+0:46 Android Tracing
+0:46 Profile Installer
+0:46 Biometric
+81:47 play-services-identity-credentials
+130:1096 Animal Sniffer
+1228:1892 Checker Framework Annotations
+3122:11357 Error Prone
+14481:11358 Guava JDK5
+25841:11362 Guava JDK7
+37205:81008 J2ObjC
+118215:1602 JSR 305
+14481:11358 JSpecify
+119819:11307 JsInterop Annotations
+131128:11396 Kotlin
+3122:11357 Kotlin coroutines
+14481:11358 SafeParcelable library
+142526:10695 apksig
+14481:11358 gsfclient
+153223:9116 java_annotations
+162341:11356 kotlinx_atomicfu
+81:47 play-services-auth-blockstore
+173699:47 kotlinx-coroutines-android
+81:47 play-services-measurement-impl
+14481:11358 Dagger
+14481:11358 Google Auto
+173748:11359 HighwayHash
+14481:11358 JSR 250
+185109:11365 JSR 330
+196476:11357 Jakarta Inject
+207835:1732 Protocol Buffers for Java
+209569:1036 checker_framework_util
+207835:1732 kotlin
+210607:11356 kotlinx_serialization
+0:46 AppCompat Resources
+0:46 Android Support Library Local Broadcast Manager
+173699:47 kotlinx-coroutines-core
+0:46 Android Tracing Runtime Kotlin Extensions
+81:47 play-services-fido
+221965:1558 chrome_sync
+196476:11357 mobiledatadownload
+0:46 com.google.firebase:firebase-messaging
+0:46 javax.inject
+81:47 play-services-tasks
+0:46 Kotlin Stdlib Common
+0:46 Android Support AnimatedVectorDrawable
+0:46 Android Arch-Runtime
+0:46 Android App Startup Runtime
+0:46 Android Emoji2 Compat view helpers
+0:46 com.google.android.datatransport:transport-backend-cct
+0:46 Activity
+0:46 com.google.android.datatransport:transport-runtime
+81:47 googleid
+81:47 play-services-measurement
+223525:11357 Firebase
+0:46 Saved State
+0:46 Android Support Library Document File
+81:47 play-services-auth-base
+14481:11358 Tink
+0:46 Android Support Library Interpolators
+48:31 AWS SDK for Android - Core Runtime
+81:47 play-services-cloud-messaging
+0:46 Core Kotlin Extensions
+0:46 androidx.privacysandbox.ads:ads-adservices-java
+0:46 androidx.core:core-viewtree
+0:46 collections
+0:46 firebase-encoders-json
+173699:47 kotlinx-coroutines-core
+0:46 Annotation
+0:46 SQLite Framework Integration
+0:46 AndroidX Futures
+0:46 Android Lifecycle Service
+0:46 firebase-annotations
+0:46 SQLite
+81:47 firebase-measurement-connector
+234884:10691 AndroidX annotation experimental library
+245577:10694 AndroidX lifecycle common library
+245577:10694 AndroidX lifecycle livedatacore library
+245577:10694 AndroidX lifecycle runtime library
+245577:10694 AndroidX tracing library
+256273:11342 FlatBuffers
+0:46 collections
+0:46 firebase-encoders-proto
+0:46 Android Emoji2 Compat
+0:46 Android Lifecycle LiveData Core
+0:46 Kotlin Libraries bill-of-materials
+0:46 Android Support Library Drawer Layout
+267617:34 Checker Qual
+81:47 play-services-base
+0:46 Android Arch-Common
+0:46 Android Support Library Cursor Adapter
+0:46 androidx.customview:poolingcontainer
+81:47 play-services-stats
+0:46 AndroidX Futures Kotlin Extensions
+0:46 Android Support CardView v7
+0:46 com.google.firebase:firebase-common-ktx
+81:47 play-services-measurement-base
+0:46 firebase-encoders
+0:46 Credentials
+0:46 Android Lifecycle Runtime
+0:46 ConstraintLayout Core
+0:46 com.google.android.datatransport:transport-api
+0:46 Android Support Library Coordinator Layout
+0:46 Android Lifecycle LiveData
+173699:47 kotlinx-coroutines-play-services
+0:46 FindBugs-jsr305
+0:46 RecyclerView
+0:46 Android Support Library Custom View
+173699:47 Gson
+173699:47 JetBrains Java Annotations
+48:31 AWS SDK for Android - Amazon Cognito Identity Provider ASF
+0:46 Android Support VectorDrawable
+0:46 com.google.firebase:firebase-components
+0:46 Experimental annotation
+0:46 ViewPager2
+0:46 Room Kotlin Extensions
+0:46 AppCompat
+0:46 ConstraintLayout
+0:46 Room-Runtime
+0:46 VersionedParcelable
+0:46 Android Lifecycle ViewModel with SavedState
+81:47 firebase-analytics
+0:46 Kotlin Stdlib
+0:46 Android Support Library loader
+0:46 Android Support DynamicAnimation
+0:46 Android Support Library Custom View
+0:46 Room-Runtime
+267653:64 integrity
+0:46 Credentials Play Services Auth
+0:46 com.google.firebase:firebase-installations
+0:46 J2ObjC Annotations
+267719:52 core-common
+81:47 firebase-iid-interop
+0:46 Android Support Library View Pager
+0:46 Transition
+0:46 WorkManager Runtime
+81:47 play-services-measurement-api
+0:46 Android Support Library Print
+0:46 SQLite
+0:46 Android Support Library core utils
+81:47 play-services-basement
+81:47 play-services-auth-api-phone
+81:47 play-services-measurement-sdk-api
+0:46 Room-Common
+0:46 com.google.firebase:firebase-datatransport
+0:46 Android Support Library fragment
+0:46 com.google.firebase:firebase-common
+48:31 AWS SDK for Android - AWS Authentication Core
+81:47 play-services-pay
+48:31 AWS SDK for Android - Amazon Pinpoint
+0:46 JSpecify annotations
+0:46 Android Lifecycle-Common
+0:46 Android Resource Inspection - Annotations
+81:47 play-services-ads-identifier
+267773:1125 Checker Framework Utilities
+0:46 SQLite Framework Integration
+0:46 error-prone annotations
+0:46 Room-Common
+173699:47 kotlinx-coroutines-bom
+0:46 Android Lifecycle Process
+81:47 play-services-measurement-sdk
+0:46 Core
+81:47 play-services-auth
+268900:46 Guava ListenableFuture only
+268948:46 Guava InternalFutureFailureAccess and InternalFutures
+268996:46 Guava: Google Core Libraries for Java
+269044:46 Roboto font
+269092:46 Android Support Library v4
+269140:46 Material Components for Android
+269188:46 Kotlin Stdlib Jdk7
+269236:46 Kotlin Stdlib Jdk8
+269284:46 Android ConstraintLayout Solver

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="memory_clear_btnColorBlue">#1a73e8</color>
+    <color name="memory_clear_button_color_accent_disable">#6b6b6b</color>
+    <color name="memory_clear_cancel_button_background_color">#00000000</color>
+    <color name="memory_clear_cancel_button_text_color">#8ab3f7</color>
+    <color name="memory_clear_dialog_bgColor">#ff303034</color>
+    <color name="memory_clear_dialog_btnColor">#ffdae2ff</color>
+</resources>

@@ -1,0 +1,27 @@
+package com.google.android.gms.cloudmessaging;
+
+import android.os.Bundle;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-cloud-messaging@@17.2.0 */
+/* JADX INFO: loaded from: classes3.dex */
+final class zzr extends zzs {
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    zzr(int i, int i2, Bundle bundle) {
+        super(i, i2, bundle);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // com.google.android.gms.cloudmessaging.zzs
+    final void zza(Bundle bundle) {
+        if (bundle.getBoolean("ack", false)) {
+            zzd(null);
+        } else {
+            zzc(new zzt(4, "Invalid response to one way request", null));
+        }
+    }
+
+    @Override // com.google.android.gms.cloudmessaging.zzs
+    final boolean zzb() {
+        return true;
+    }
+}

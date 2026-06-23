@@ -1,0 +1,23 @@
+package com.amazonaws.services.cognitoidentityprovider.model.transform;
+
+import com.amazonaws.services.cognitoidentityprovider.model.UpdateAuthEventFeedbackResult;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
+
+/* JADX INFO: loaded from: classes.dex */
+public class UpdateAuthEventFeedbackResultJsonUnmarshaller implements Unmarshaller<UpdateAuthEventFeedbackResult, JsonUnmarshallerContext> {
+    private static UpdateAuthEventFeedbackResultJsonUnmarshaller instance;
+
+    /* JADX DEBUG: Method merged with bridge method: unmarshall(Ljava/lang/Object;)Ljava/lang/Object; */
+    @Override // com.amazonaws.transform.Unmarshaller
+    public UpdateAuthEventFeedbackResult unmarshall(JsonUnmarshallerContext jsonUnmarshallerContext) throws Exception {
+        return new UpdateAuthEventFeedbackResult();
+    }
+
+    public static UpdateAuthEventFeedbackResultJsonUnmarshaller getInstance() {
+        if (instance == null) {
+            instance = new UpdateAuthEventFeedbackResultJsonUnmarshaller();
+        }
+        return instance;
+    }
+}

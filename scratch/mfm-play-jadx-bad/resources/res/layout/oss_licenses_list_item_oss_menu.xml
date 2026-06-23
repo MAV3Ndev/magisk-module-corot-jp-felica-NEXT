@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:background="@color/oss_licenses_color_white"
+    android:paddingLeft="0dp"
+    android:paddingRight="?android:attr/scrollbarSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingStart="0dp"
+    android:paddingEnd="?android:attr/scrollbarSize">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textSize="18sp"
+        android:textColor="@color/oss_licenses_textcolor_primary"
+        android:ellipsize="marquee"
+        android:id="@+id/library_name"
+        android:fadingEdge="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:singleLine="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="6dp"/>
+</LinearLayout>

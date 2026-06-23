@@ -1,0 +1,55 @@
+package com.amazonaws.services.cognitoidentityprovider.model.transform;
+
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.DefaultRequest;
+import com.amazonaws.Request;
+import com.amazonaws.http.HttpHeader;
+import com.amazonaws.http.HttpMethodName;
+import com.amazonaws.services.cognitoidentityprovider.model.DeleteResourceServerRequest;
+import com.amazonaws.transform.Marshaller;
+import com.amazonaws.util.StringInputStream;
+import com.amazonaws.util.StringUtils;
+import com.amazonaws.util.json.AwsJsonWriter;
+import com.amazonaws.util.json.JsonUtils;
+import java.io.StringWriter;
+
+/* JADX INFO: loaded from: classes.dex */
+public class DeleteResourceServerRequestMarshaller implements Marshaller<Request<DeleteResourceServerRequest>, DeleteResourceServerRequest> {
+    @Override // com.amazonaws.transform.Marshaller
+    public Request<DeleteResourceServerRequest> marshall(DeleteResourceServerRequest deleteResourceServerRequest) {
+        if (deleteResourceServerRequest == null) {
+            throw new AmazonClientException("Invalid argument passed to marshall(DeleteResourceServerRequest)");
+        }
+        DefaultRequest defaultRequest = new DefaultRequest(deleteResourceServerRequest, "AmazonCognitoIdentityProvider");
+        defaultRequest.addHeader("X-Amz-Target", "AWSCognitoIdentityProviderService.DeleteResourceServer");
+        defaultRequest.setHttpMethod(HttpMethodName.POST);
+        defaultRequest.setResourcePath("/");
+        try {
+            StringWriter stringWriter = new StringWriter();
+            AwsJsonWriter jsonWriter = JsonUtils.getJsonWriter(stringWriter);
+            jsonWriter.beginObject();
+            if (deleteResourceServerRequest.getUserPoolId() != null) {
+                String userPoolId = deleteResourceServerRequest.getUserPoolId();
+                jsonWriter.name("UserPoolId");
+                jsonWriter.value(userPoolId);
+            }
+            if (deleteResourceServerRequest.getIdentifier() != null) {
+                String identifier = deleteResourceServerRequest.getIdentifier();
+                jsonWriter.name("Identifier");
+                jsonWriter.value(identifier);
+            }
+            jsonWriter.endObject();
+            jsonWriter.close();
+            String string = stringWriter.toString();
+            byte[] bytes = string.getBytes(StringUtils.UTF8);
+            defaultRequest.setContent(new StringInputStream(string));
+            defaultRequest.addHeader(HttpHeader.CONTENT_LENGTH, Integer.toString(bytes.length));
+            if (!defaultRequest.getHeaders().containsKey(HttpHeader.CONTENT_TYPE)) {
+                defaultRequest.addHeader(HttpHeader.CONTENT_TYPE, "application/x-amz-json-1.1");
+            }
+            return defaultRequest;
+        } catch (Throwable th) {
+            throw new AmazonClientException("Unable to marshall request to JSON: " + th.getMessage(), th);
+        }
+    }
+}

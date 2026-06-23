@@ -1,0 +1,60 @@
+{
+    "payload" : {
+       "cardList": [
+           {
+               "cid" : "D00000000000000000000000000000000000000000000000000000000000001",
+               "platformType" : "99",
+               "seInfo" : {
+                   "sepId" : "999999",
+                   "seType" : "99",
+                   "seId" : "0011223344556677",
+                   "idm" : "0011223344556677",
+                   "icCode" : "9999",
+                   "containerIssueInfo" : "99999999999999999999999999999999"
+               },
+               "serviceId" : "SV000027",
+               "serviceType" : "UUPUU100",
+               "cardType" : "123456789abc",
+               "cardCategory" : "GC000001",
+               "cardStatuses" : {
+                   "cardStatus" : "Active",
+                   "subStatus" : {
+                       "position" : "Foreground",
+                       "finish" : "done",
+                       "spLock" : false,
+                       "blackList" : false
+                   },
+                   "task" : "None",
+                   "taskStatus" : "999999999"
+               },
+               "deviceInfo" : {
+                   "deviceName" : "9999999999",
+                   "devicePlatformName" : "999999999",
+                   "devicePlatformVersion" : "99999999"
+               },
+               "issuerInfo" : {
+                   "spId" : "99999999",
+                   "tspId" : "99999999",
+                   "brokerId" : "99999999",
+                   "issuerId" : "99999999",
+                   "walletAppId" : null,
+                   "walletAppName" : "99999999",
+                   "walletAppCallerInfo" : "99999999",
+                   "walletAppIdentifiableInfo" : "99999999"
+               },
+               "cardIdentifiableInfo" : {
+                   "nodeCodeList" : [
+                   ]
+               },
+               "appletInstanceAid" : "01234567890123456789012345678901",
+               "additionalInfoHash" : null
+           }
+       ],
+        "cardIdentifiableInfoList" : [
+            {
+                "serviceId" : "SV000027",
+                "systemCode" : "0003"
+            }
+        ]
+    }
+}

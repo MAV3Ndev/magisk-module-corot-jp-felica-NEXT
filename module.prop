@@ -1,7 +1,7 @@
-id=corot-jp-felica
-name=Patch for Xiaomi 13T Pro Japan
-version=v03
-versionCode=03
-author=soralis0912
-description=Xiaomi 13T Pro 日本版用パッチ
-updateJson=https://raw.githubusercontent.com/soralis0912/magisk-module-corot-jp-felica/master/update.json
+id=corot-jp-felica-next
+name=Patch for Xiaomi 13T Pro Japan (NEXT)
+version=v11
+versionCode=11
+author=MAV3Ndev
+description=Xiaomi 13T Pro 日本版用 純正FeliCa Clientパッチ。KernelSUでは mountify 必須。
+updateJson=https://raw.githubusercontent.com/MAV3Ndev/magisk-module-corot-jp-felica-NEXT/master/update.json

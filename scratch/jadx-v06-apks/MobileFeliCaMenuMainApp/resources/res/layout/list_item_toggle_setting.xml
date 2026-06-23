@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/ll_item_switch"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="56dp"/>
+    <TextView
+        android:textSize="16dp"
+        android:textColor="@color/textcolor_primary"
+        android:gravity="center"
+        android:id="@+id/tv_menu_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <Switch
+        android:gravity="right"
+        android:layout_gravity="center"
+        android:id="@+id/s_item_switch"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:checked="true"/>
+</LinearLayout>

@@ -1,0 +1,58 @@
+package com.google.android.gms.internal.auth;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.RemoteException;
+import com.google.android.gms.auth.api.AuthProxy;
+import com.google.android.gms.auth.api.AuthProxyOptions;
+import com.google.android.gms.auth.api.proxy.ProxyClient;
+import com.google.android.gms.auth.api.proxy.ProxyRequest;
+import com.google.android.gms.auth.api.proxy.ProxyResponse;
+import com.google.android.gms.common.api.GoogleApi;
+import com.google.android.gms.common.api.internal.RemoteCall;
+import com.google.android.gms.common.api.internal.TaskApiCall;
+import com.google.android.gms.tasks.Task;
+import com.google.android.gms.tasks.TaskCompletionSource;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* JADX INFO: loaded from: classes3.dex */
+public final class zzbo extends GoogleApi implements ProxyClient {
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public zzbo(Activity activity, AuthProxyOptions authProxyOptions) {
+        super(activity, AuthProxy.API, authProxyOptions == null ? AuthProxyOptions.zza : authProxyOptions, GoogleApi.Settings.DEFAULT_SETTINGS);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // com.google.android.gms.auth.api.proxy.ProxyClient
+    public final Task<String> getSpatulaHeader() {
+        return doRead(TaskApiCall.builder().run(new RemoteCall() { // from class: com.google.android.gms.internal.auth.zzbk
+            /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+            /* JADX DEBUG: Multi-variable search result rejected for r3v2, resolved type: T */
+            /* JADX WARN: Multi-variable type inference failed */
+            @Override // com.google.android.gms.common.api.internal.RemoteCall
+            public final void accept(Object obj, Object obj2) throws RemoteException {
+                ((zzbh) ((zzbe) obj).getService()).zzd(new zzbn(this.zza, (TaskCompletionSource) obj2));
+            }
+        }).setMethodKey(1520).build());
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // com.google.android.gms.auth.api.proxy.ProxyClient
+    public final Task<ProxyResponse> performProxyRequest(final ProxyRequest proxyRequest) {
+        return doWrite(TaskApiCall.builder().run(new RemoteCall() { // from class: com.google.android.gms.internal.auth.zzbl
+            /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+            /* JADX DEBUG: Multi-variable search result rejected for r4v2, resolved type: T */
+            /* JADX WARN: Multi-variable type inference failed */
+            @Override // com.google.android.gms.common.api.internal.RemoteCall
+            public final void accept(Object obj, Object obj2) throws RemoteException {
+                zzbo zzboVar = this.zza;
+                ProxyRequest proxyRequest2 = proxyRequest;
+                ((zzbh) ((zzbe) obj).getService()).zze(new zzbm(zzboVar, (TaskCompletionSource) obj2), proxyRequest2);
+            }
+        }).setMethodKey(1518).build());
+    }
+
+    public zzbo(Context context, AuthProxyOptions authProxyOptions) {
+        super(context, AuthProxy.API, authProxyOptions == null ? AuthProxyOptions.zza : authProxyOptions, GoogleApi.Settings.DEFAULT_SETTINGS);
+    }
+}

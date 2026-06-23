@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sg_02020405">
+        <item>To use Osaifu-Keitai, IC card setting is required. Please confirm the Osaifu-Keitai Usage Regulations. (Press Back key to return to this screen.)\nAgree to the [(link)], and run initial setup of IC card?\n(The parental consent is necessary if you are minor.)\n\nThis application uses network connection.</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+    </array>
+    <array name="sg_02020406">
+        <item>Osaifu-Keitai Usage Regulations</item>
+        <item />
+        <item />
+        <item />
+        <item />
+    </array>
+    <array name="sg_02020407">
+        <item>http://osaifu.nttdocomo.co.jp/other/terms.html</item>
+        <item />
+        <item />
+        <item />
+        <item />
+    </array>
+    <array name="sg_02020408">
+        <item>To use Osaifu-Keitai, UIM card setting is required. Please confirm the Osaifu-Keitai Usage Regulations. (Press Back key to return to this screen.)\nAgree to the [(link)], and run initial setup of UIM card?\n(The parental consent is necessary if you are minor.)\n\nThis application uses network connection.</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+    </array>
+    <array name="sg_02020409">
+        <item>To use Osaifu-Keitai, IC card and UIM card setting is required. Please confirm the Osaifu-Keitai Usage Regulations. (Press Back key to return to this screen.)\nAgree to the [(link)], and run initial setup of IC card and UIM card?\n(The parental consent is necessary if you are minor.)\n\nThis application uses network connection.</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+        <item>This application uses network connection.\n\nStart initial setup for using Osaifu-Keitai?</item>
+    </array>
+    <array name="sg_02020410">
+        <item>http://osaifu.nttdocomo.co.jp/other/terms.html</item>
+        <item />
+        <item />
+        <item />
+        <item />
+    </array>
+    <array name="sg_02020411">
+        <item>Agree to the Osaifu-Keitai\nUsage Regulations</item>
+        <item />
+        <item />
+        <item />
+        <item />
+    </array>
+    <array name="sg_res_041">
+        <item>/product/etc/felica/</item>
+        <item>/vendor/etc/felica/</item>
+        <item>/system/etc/felica/</item>
+    </array>
+</resources>

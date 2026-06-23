@@ -1,0 +1,13 @@
+package android.service.credentials;
+
+import android.app.Service;
+
+/* JADX INFO: loaded from: classes2.dex */
+public /* synthetic */ class CredentialProviderService extends Service {
+    /* JADX DEBUG: Can't inline method, not implemented redirect type for insn: 0x0005: THROW 
+  (wrap:java.lang.NoClassDefFoundError:0x0002: CONSTRUCTOR  A[MD:():void (c), WRAPPED] call: java.lang.NoClassDefFoundError.<init>():void type: CONSTRUCTOR)
+ */
+    static {
+        throw new NoClassDefFoundError();
+    }
+}

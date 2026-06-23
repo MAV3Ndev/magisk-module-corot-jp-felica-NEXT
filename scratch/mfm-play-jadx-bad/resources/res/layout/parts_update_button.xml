@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/parts_update_button"
+        android:background="@drawable/ic_refresh_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/voice_read_button_update_animation"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+    <ImageView
+        android:id="@+id/parts_update_button_error"
+        android:background="@drawable/ic_refresh_active_error"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_alignBottom="@+id/parts_update_button"
+        android:layout_marginStart="-7dp"
+        android:layout_alignStart="@+id/parts_update_button"/>
+</RelativeLayout>

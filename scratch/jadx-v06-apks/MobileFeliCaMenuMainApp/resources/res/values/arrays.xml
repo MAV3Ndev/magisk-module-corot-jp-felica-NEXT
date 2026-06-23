@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sg_02030398">
+        <item>https://ms.fnopf.jp/mfm/bn/01/02/100001/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/01/02/100002/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/01/02/100003/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/01/02/100008/</item>
+    </array>
+    <array name="sg_02030399">
+        <item>https://ms.fnopf.jp/mfm/bn/02/02/100001/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/02/02/100002/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/02/02/100003/</item>
+        <item>https://ms.fnopf.jp/mfm/bn/02/02/100008/</item>
+    </array>
+    <array name="sg_020303A5">
+        <item>ms.fnopf.jp</item>
+        <item>ap.pitsquare.jp</item>
+        <item>www.felicanetworks.co.jp</item>
+        <item>osaifu.nttdocomo.co.jp</item>
+        <item>play.google.com</item>
+        <item>support.google.com</item>
+        <item>faq.nttdocomo.co.jp</item>
+        <item>faq.nttdocomo.com</item>
+        <item>www.nttdocomo.co.jp</item>
+        <item>www.nttdocomo.com</item>
+        <item>www.au.com</item>
+        <item>www.softbank.jp</item>
+    </array>
+    <array name="sg_02030404">
+        <item>http://osaifu.nttdocomo.co.jp/other/terms.html</item>
+        <item />
+        <item />
+        <item />
+    </array>
+    <array name="sg_02030483">
+        <item>https://ap.pitsquare.jp/osaifu/d/menu_apl/term.html</item>
+        <item>https://ap.pitsquare.jp/osaifu/k/menu_apl/term.html</item>
+        <item>https://ap.pitsquare.jp/osaifu/s/menu_apl/term.html</item>
+        <item>https://ap.pitsquare.jp/osaifu/fn/menu_apl/term.html</item>
+    </array>
+    <array name="sg_02030495">
+        <item>https://ap.pitsquare.jp/osaifu/d/help/change.html</item>
+        <item>https://ap.pitsquare.jp/osaifu/k/help/change.html</item>
+        <item>https://ap.pitsquare.jp/osaifu/s/help/change.html</item>
+        <item>https://ap.pitsquare.jp/osaifu/fn/help/change.html</item>
+    </array>
+    <array name="sg_02030498">
+        <item>file:///android_asset/d/en/setting_tos.html</item>
+        <item>file:///android_asset/k/en/setting_tos.html</item>
+        <item>file:///android_asset/s/en/setting_tos.html</item>
+        <item>file:///android_asset/fn/en/setting_tos.html</item>
+    </array>
+    <array name="sg_02030499">
+        <item>Accept the Terms of Use for Osaifu-Keitai application, handling of personal information defined in them, and Osaifu-Keitai Usage Regulations. Then setup IC card.</item>
+        <item>Accept the Terms of Use for Osaifu-Keitai application and handling of personal information defined in them. Then setup Osaifu-Keitai.</item>
+        <item>Accept the Terms of Use for Osaifu-Keitai application and handling of personal information defined in them. Then setup Osaifu-Keitai.</item>
+        <item>Accept the Terms of Use for Osaifu-Keitai application and handling of personal information defined in them. Then setup Osaifu-Keitai.</item>
+    </array>
+    <array name="sg_02030903">
+        <item>/product/etc/felica/</item>
+        <item>/vendor/etc/felica/</item>
+        <item>/system/etc/felica/</item>
+    </array>
+    <array name="sg_020309B4">
+        <item>FN00000001</item>
+        <item>FN00000002</item>
+        <item>FN00000003</item>
+    </array>
+    <array name="sg_020309B5">
+        <item>おサイフケータイなら便利な機能がもりだくさん！</item>
+        <item>おサイフケータイなら便利な機能がもりだくさん！</item>
+        <item>おサイフケータイなら便利な機能がもりだくさん！</item>
+    </array>
+    <array name="sg_020309B6">
+        <item>sg_guidance_fn00000001</item>
+        <item>sg_guidance_fn00000002</item>
+        <item>sg_guidance_fn00000003</item>
+    </array>
+</resources>

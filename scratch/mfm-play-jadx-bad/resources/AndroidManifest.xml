@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1362620"
+    android:versionName="36.26.20 (260515a1)"
+    android:installLocation="internalOnly"
+    android:compileSdkVersion="36"
+    android:compileSdkVersionCodename="16"
+    package="com.felicanetworks.mfm.main"
+    platformBuildVersionCode="36"
+    platformBuildVersionName="16">
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="36"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.felicanetworks.mfc.permission.MFC_ACCESS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="com.felicanetworks.lockapp.provider.READ_LOCK_STATUS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <queries>
+        <package android:name="com.felicanetworks.mfc"/>
+        <package android:name="com.felicanetworks.mfs"/>
+        <package android:name="com.google.android.pixelnfc"/>
+        <intent>
+            <action android:name="com.felicanetworks.mfm.START"/>
+        </intent>
+        <intent>
+            <action android:name="com.felicanetworks.deviceidentificationdata.Contentprovider"/>
+        </intent>
+        <intent>
+            <action android:name="com.felicanetworks.mfc.mfi.action.NOTIFY_EVENT"/>
+        </intent>
+        <intent>
+            <action android:name="com.felicanetworks.semc.action.NOTIFY_REMOVED"/>
+        </intent>
+        <intent>
+            <action android:name="com.felicanetworks.tis.action.TAPINTERACTION_INFO_EVENT"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <permission
+        android:name="com.felicanetworks.mfm.main.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.felicanetworks.mfm.main.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="android.permission.NFC_TRANSACTION_EVENT"/>
+    <application
+        android:theme="@style/Theme.Main"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:name="com.felicanetworks.mfm.main.presenter.internal.AppObserver"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification"/>
+        <activity
+            android:theme="@style/Theme.Main.Splash"
+            android:label="@string/act_title_006"
+            android:name="com.felicanetworks.mfm.main.ServiceListActivity"
+            android:exported="true"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.Main.DrawerActionBar"
+            android:label="@string/voice_read_toolbar_title_my_service"
+            android:name="com.felicanetworks.mfm.main.view.activity.CentralActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.NoActionBar"
+            android:name="com.felicanetworks.mfm.main.view.activity.TutorialActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.BranchActionBar"
+            android:name="com.felicanetworks.mfm.main.view.activity.RecommendDetailActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.DrawerActionBar"
+            android:label="@string/voice_read_toolbar_title_notice_list"
+            android:name="com.felicanetworks.mfm.main.view.activity.NoticeListActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.BranchActionBar"
+            android:name="com.felicanetworks.mfm.main.view.activity.NoticeDetailActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.DrawerActionBar"
+            android:label="@string/voice_read_toolbar_title_support_menu_term"
+            android:name="com.felicanetworks.mfm.main.view.activity.SupportMenuActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.DrawerActionBar"
+            android:name="com.felicanetworks.mfm.main.view.activity.SettingListActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.DrawerActionBar"
+            android:label="@string/voice_read_toolbar_title_card_reader"
+            android:name="com.felicanetworks.mfm.main.view.activity.ExtIcCardReaderActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.BranchActionBar"
+            android:name="com.felicanetworks.mfm.main.view.activity.MemoryUsageActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.BranchActionBar"
+            android:name="com.felicanetworks.mfm.main.view.activity.AccountChangeHistoryActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.BranchActionBar"
+            android:name="com.felicanetworks.mfm.main.view.activity.RWSettingActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.DrawerActionBar"
+            android:name="com.felicanetworks.mfm.main.view.activity.FaqActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.BranchActionBar"
+            android:name="com.felicanetworks.mfm.main.view.activity.FpServiceListActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.BranchActionBar"
+            android:label="@string/voice_read_toolbar_title_card_detail"
+            android:name="com.felicanetworks.mfm.main.view.activity.CardDetailActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@style/Theme.Main.BranchActionBar"
+            android:label="@string/voice_read_toolbar_title_delete_card_list"
+            android:name="com.felicanetworks.mfm.main.view.activity.DeleteCardListActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.felicanetworks.mfm.main.LaunchManagementActivity"
+            android:exported="true"
+            android:multiprocess="false"
+            android:launchMode="singleInstance"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="osaifu-keitai"
+                    android:host="com.felicanetworks.mfm.main"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/oss_licenses_AppTheme.BranchActionBar"
+            android:name="com.felicanetworks.mfm.oss.OssLicensesMenuActivity"
+            android:exported="true"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/oss_licenses_AppTheme.BranchActionBar"
+            android:name="com.felicanetworks.mfm.oss.OssLicensesActivity"
+            android:exported="false"
+            android:multiprocess="false"
+            android:launchMode="singleTop"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|locale"/>
+        <service
+            android:name="com.felicanetworks.mfm.mfcutil.mfc.Felica"
+            android:exported="false"/>
+        <receiver
+            android:name="com.felicanetworks.mfm.LockStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.felicanetworks.mfm.action.LOCKSTATUS_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.felicanetworks.mfm.main.presenter.internal.notification.PushMessageReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.felicanetworks.mfm.messenger.action.RECEIVE_TOKEN"/>
+                <action android:name="com.felicanetworks.mfm.messenger.action.RECEIVE_MESSAGE_TO_MENU"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.felicanetworks.mfm.MfsMovementReceiver"
+            android:enabled="true"
+            android:exported="true"/>
+        <receiver
+            android:name="com.felicanetworks.mfm.AppMovementReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/Theme.TranslucentBackground"
+            android:name="com.felicanetworks.mfm.main.MfiAccountSwitchingActivity"
+            android:exported="true"
+            android:multiprocess="false"
+            android:launchMode="standard"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc"/>
+        <provider
+            android:name="com.felicanetworks.mfm.main.presenter.internal.MfiContentProvider"
+            android:exported="false"
+            android:process=":mficlient"
+            android:authorities="com.felicanetworks.mfm.main.presenter.internal.mficontentprovider"/>
+        <provider
+            android:name="com.felicanetworks.mfm.main.model.internal.main.db.MfmDatabaseContentProvider"
+            android:exported="false"
+            android:authorities="com.felicanetworks.mfm.main.model.internal.main.db"/>
+        <receiver
+            android:name="com.felicanetworks.mfm.MficStatusChangeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.felicanetworks.mfc.mfi.action.NOTIFY_EVENT"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/SudBaseThemeGlif_Light"
+            android:label="@string/voice_read_toolbar_title_memory_clear"
+            android:name="com.felicanetworks.mfm.memory_clear.MemoryClearActivity"
+            android:exported="true"
+            android:multiprocess="false"
+            android:launchMode="standard"
+            android:configChanges="fontScale|fontWeightAdjustment|grammaticalGender|colorMode|layoutDirection|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc"/>
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false"/>
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false"/>
+        <service
+            android:name="com.felicanetworks.mfm.messenger.MessagePostOffice"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.felicanetworks.mfm.messenger.FirebaseApiAccessor"
+            android:exported="false"/>
+        <service
+            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+            android:enabled="true"
+            android:exported="false">
+            <meta-data
+                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity
+            android:theme="@style/Theme.Hidden"
+            android:name="androidx.credentials.playservices.HiddenActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden"
+            android:fitsSystemWindows="true"/>
+        <activity
+            android:theme="@style/Theme.Hidden"
+            android:name="androidx.credentials.playservices.IdentityCredentialApiHiddenActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden"
+            android:fitsSystemWindows="true"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"/>
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.felicanetworks.mfm.main.androidx-startup">
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:directBootAware="false"/>
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true"/>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true"/>
+        </receiver>
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.felicanetworks.mfm.main.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true"/>
+        <activity
+            android:theme="@style/PinpointNotificationActivityTheme"
+            android:name="com.amazonaws.mobileconnectors.pinpoint.targeting.notification.PinpointNotificationActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"/>
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false"/>
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct"/>
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false"/>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+        <service
+            android:name="com.felicanetworks.mfc.mfi.FelicaAdapter"
+            android:exported="true"
+            android:process=":mficlient"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="To support FeliCa access from the background, such as auto top-up and reading transaction history by wallet apps."/>
+        </service>
+        <service
+            android:name="com.felicanetworks.mfm.mfcutil.mfc.FSC"
+            android:exported="false"/>
+        <service
+            android:name="com.felicanetworks.mfc.Felica"
+            android:exported="false"
+            android:process=":mficlient"/>
+        <service
+            android:name="com.felicanetworks.mfc.FSC"
+            android:exported="false"
+            android:process=":mficlient"/>
+        <service
+            android:name="com.felicanetworks.mfc.mfi.openidconnect.OpenIdConnectService"
+            android:exported="false"
+            android:process=":mficlient"/>
+        <activity
+            android:theme="@style/Theme.mfi_TranslucentBackground"
+            android:label="@string/mfi_Screen_Called_Title_Text"
+            android:name="com.felicanetworks.mfc.mfi.openidconnect.OpenIdConnectActivity"
+            android:exported="true"
+            android:process=":mficlient"
+            android:screenOrientation="unspecified"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|orientation|keyboardHidden"
+            android:resizeableActivity="true">
+            <intent-filter>
+                <action android:name="com.felicanetworks.mfc.mfi.action.OPENID_CONNECT_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.felicanetworks.mfc.mfi.CloudMessagingEventReceiver.ChannelMessenger"
+            android:exported="false"
+            android:process=":mficlient">
+            <intent-filter>
+                <action android:name="com.felicanetworks.mfm.messenger.action.RECEIVE_TOKEN"/>
+                <action android:name="com.felicanetworks.mfm.messenger.action.RECEIVE_MESSAGE_TO_MFIC"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.felicanetworks.mfc.mfi.CloudMessagingEventReceiver.ChannelAlarm"
+            android:exported="false"
+            android:process=":mficlient"/>
+        <service
+            android:name="com.felicanetworks.mfc.mfi.CloudMessagingService"
+            android:exported="false"
+            android:process=":mficlient"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="To support FeliCa access from the background, such as auto top-up and reading transaction history by wallet apps."/>
+        </service>
+        <receiver
+            android:name="com.felicanetworks.semc.receiver.CloudMessagingEventReceiver.ChannelMessenger"
+            android:exported="false"
+            android:process=":semclient">
+            <intent-filter>
+                <action android:name="com.felicanetworks.mfm.messenger.action.RECEIVE_TOKEN"/>
+                <action android:name="com.felicanetworks.mfm.messenger.action.RECEIVE_MESSAGE_TO_SEMC"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.felicanetworks.semc.receiver.NotifyClientEventReceiver"
+            android:exported="false"
+            android:process=":semclient">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.felicanetworks.semc.SemClientAdapter"
+            android:exported="true"
+            android:process=":semclient"/>
+        <provider
+            android:name="com.felicanetworks.semc.util.SharedPrefsProvider"
+            android:exported="false"
+            android:process=":semclient"
+            android:authorities="com.felicanetworks.mfm.main.util.SharedPrefsProvider"/>
+        <provider
+            android:name="com.felicanetworks.semc.receiver.CloudMessagingEventReceiver.ConnectStatusProvider"
+            android:exported="false"
+            android:process=":semclient"
+            android:authorities="com.felicanetworks.mfm.main.receiver.CloudMessagingEventReceiver$ConnectStatusProvider"/>
+        <provider
+            android:name="com.felicanetworks.semc.util.ConnectionAppInfoContentProvider"
+            android:exported="true"
+            android:authorities="com.felicanetworks.mfm.main.util.ConnectionAppInfoContentProvider"
+            android:grantUriPermissions="false">
+            <grant-uri-permission android:path="/ConnectionAppInfo"/>
+        </provider>
+        <receiver
+            android:name="com.felicanetworks.tis.TapInteractionReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.nfc.action.TRANSACTION_DETECTED"/>
+                <data
+                    android:scheme="nfc"
+                    android:host="secure"
+                    android:port="0"
+                    android:pathPattern="/eSE.*/A000000680020000.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.felicanetworks.mfc.action.TRANSACTION_FINISHED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.felicanetworks.tis.PreferenceChangedReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.felicanetworks.tis.action.NOTIFICATION_SETTING"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.felicanetworks.tis.TapInteractionService"
+            android:exported="false"
+            android:process=":tis"/>
+        <provider
+            android:name="com.felicanetworks.tis.SharedPreferenceProvider"
+            android:exported="false"
+            android:authorities="com.felicanetworks.tis.SharedPreferenceProvider"/>
+        <service
+            android:name="com.felicanetworks.tis.Felica"
+            android:exported="false"
+            android:process=":tis"/>
+        <activity
+            android:theme="@style/tis_dialog_no_title_fullscreen"
+            android:name="com.felicanetworks.tis.ui.CardDialogActivity"
+            android:exported="false"
+            android:taskAffinity="com.felicanetworks.tis.ui.CardDialogActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="fontWeightAdjustment|grammaticalGender|colorMode|smallestScreenSize|screenSize|uiMode|orientation|keyboardHidden"
+            android:turnScreenOn="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.PlayCore.Transparent"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true"/>
+    </application>
+</manifest>

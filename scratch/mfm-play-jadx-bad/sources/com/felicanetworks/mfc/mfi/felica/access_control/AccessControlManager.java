@@ -1,0 +1,28 @@
+package com.felicanetworks.mfc.mfi.felica.access_control;
+
+import android.content.Context;
+
+/* JADX INFO: loaded from: classes3.dex */
+public interface AccessControlManager {
+    public static final String ERROR_MSG_HTTP_COMMUNICATION_ERROR = "HTTP communication error.";
+    public static final String ERROR_MSG_INTERRUPTED = "Interrupted.";
+    public static final int TYPE_HTTP_ERROR = 3;
+    public static final int TYPE_INTERRUPTED_ERROR = 2;
+    public static final int TYPE_INVALID_APP_ERROR = 5;
+    public static final int TYPE_MFICLIENT_NOT_PERMIT = 101;
+    public static final int TYPE_MFICLIENT_VERSION_ERROR = 100;
+    public static final int TYPE_NOT_FOUND_ERROR = 4;
+    public static final int TYPE_UNKNOWN_ERROR = 1;
+
+    AccessController getAccessController();
+
+    String getErrorMessage();
+
+    int getErrorType();
+
+    void init(Context context);
+
+    boolean startAccessControl(String callerPackageName, int pid, int uid);
+
+    void stopAccessControl();
+}

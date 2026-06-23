@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/arrow_pointer"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:baselineAlignBottom="true"
+        android:layout_alignBaseline="@+id/tv_other"
+        app:srcCompat="@drawable/bg_detail_arrow"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:ellipsize="end"
+        android:id="@+id/tv_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:maxLines="2"
+        style="@style/style_13_regular_blue_link"/>
+</RelativeLayout>

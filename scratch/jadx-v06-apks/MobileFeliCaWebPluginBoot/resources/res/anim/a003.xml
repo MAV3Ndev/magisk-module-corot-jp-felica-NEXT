@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    id="selected">
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p611"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p612"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p613"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p614"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p615"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p616"/>
+</animation-list>

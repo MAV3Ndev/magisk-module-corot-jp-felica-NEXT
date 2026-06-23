@@ -1,0 +1,23 @@
+package com.amazonaws.services.cognitoidentityprovider.model.transform;
+
+import com.amazonaws.services.cognitoidentityprovider.model.AddCustomAttributesResult;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.Unmarshaller;
+
+/* JADX INFO: loaded from: classes.dex */
+public class AddCustomAttributesResultJsonUnmarshaller implements Unmarshaller<AddCustomAttributesResult, JsonUnmarshallerContext> {
+    private static AddCustomAttributesResultJsonUnmarshaller instance;
+
+    /* JADX DEBUG: Method merged with bridge method: unmarshall(Ljava/lang/Object;)Ljava/lang/Object; */
+    @Override // com.amazonaws.transform.Unmarshaller
+    public AddCustomAttributesResult unmarshall(JsonUnmarshallerContext jsonUnmarshallerContext) throws Exception {
+        return new AddCustomAttributesResult();
+    }
+
+    public static AddCustomAttributesResultJsonUnmarshaller getInstance() {
+        if (instance == null) {
+            instance = new AddCustomAttributesResultJsonUnmarshaller();
+        }
+        return instance;
+    }
+}

@@ -1,6 +1,6 @@
 {
-    "version": "v03",
-    "versionCode": 3,
-    "zipUrl": "https://github.com/soralis0912/magisk-module-corot-jp-felica/releases/latest/download/magisk-module-corot-jp-felica.zip",
-    "changelog": "https://raw.githubusercontent.com/soralis0912/magisk-module-corot-jp-felica/master/changelog.md"
+    "version": "v11",
+    "versionCode": 11,
+    "zipUrl": "https://github.com/MAV3Ndev/magisk-module-corot-jp-felica-NEXT/releases/latest/download/magisk-module-corot-jp-felica-NEXT.zip",
+    "changelog": "https://raw.githubusercontent.com/MAV3Ndev/magisk-module-corot-jp-felica-NEXT/master/changelog.md"
 }

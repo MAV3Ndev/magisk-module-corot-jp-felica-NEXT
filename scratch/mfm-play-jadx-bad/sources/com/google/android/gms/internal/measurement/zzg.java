@@ -1,0 +1,104 @@
+package com.google.android.gms.internal.measurement;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-measurement@@22.5.0 */
+/* JADX INFO: loaded from: classes3.dex */
+public final class zzg {
+    public final zzg zza;
+    final zzaw zzb;
+    final Map zzc = new HashMap();
+    final Map zzd = new HashMap();
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public zzg(zzg zzgVar, zzaw zzawVar) {
+        this.zza = zzgVar;
+        this.zzb = zzawVar;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final zzao zza(zzao zzaoVar) {
+        return this.zzb.zzb(this, zzaoVar);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final zzao zzb(zzae zzaeVar) {
+        zzao zzaoVarZzb = zzao.zzf;
+        Iterator itZzg = zzaeVar.zzg();
+        while (itZzg.hasNext()) {
+            zzaoVarZzb = this.zzb.zzb(this, zzaeVar.zzl(((Integer) itZzg.next()).intValue()));
+            if (zzaoVarZzb instanceof zzag) {
+                break;
+            }
+        }
+        return zzaoVarZzb;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final zzg zzc() {
+        return new zzg(this, this.zzb);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final boolean zzd(String str) {
+        if (this.zzc.containsKey(str)) {
+            return true;
+        }
+        zzg zzgVar = this.zza;
+        if (zzgVar != null) {
+            return zzgVar.zzd(str);
+        }
+        return false;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final void zze(String str, zzao zzaoVar) {
+        zzg zzgVar;
+        Map map = this.zzc;
+        if (!map.containsKey(str) && (zzgVar = this.zza) != null && zzgVar.zzd(str)) {
+            zzgVar.zze(str, zzaoVar);
+        } else {
+            if (this.zzd.containsKey(str)) {
+                return;
+            }
+            if (zzaoVar == null) {
+                map.remove(str);
+            } else {
+                map.put(str, zzaoVar);
+            }
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final void zzf(String str, zzao zzaoVar) {
+        if (this.zzd.containsKey(str)) {
+            return;
+        }
+        if (zzaoVar == null) {
+            this.zzc.remove(str);
+        } else {
+            this.zzc.put(str, zzaoVar);
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final void zzg(String str, zzao zzaoVar) {
+        zzf(str, zzaoVar);
+        this.zzd.put(str, true);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final zzao zzh(String str) {
+        Map map = this.zzc;
+        if (map.containsKey(str)) {
+            return (zzao) map.get(str);
+        }
+        zzg zzgVar = this.zza;
+        if (zzgVar != null) {
+            return zzgVar.zzh(str);
+        }
+        throw new IllegalArgumentException(String.format("%s is not defined", str));
+    }
+}

@@ -1,0 +1,58 @@
+package com.felicanetworks.mfm.mfcutil.mfc.mfi;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface BaseMfiEventCallback {
+    public static final String MSG_UNKNOWN_ERROR = "Unknown error.";
+    public static final int TYPE_ACCESS_FAILED = 228;
+    public static final int TYPE_AGREEMENT_NOT_ACCEPT = 218;
+    public static final int TYPE_CARD_NOT_CACHED = 157;
+    public static final int TYPE_CARD_NOT_EXIST = 208;
+    public static final int TYPE_CARD_NOT_UNIQUE = 214;
+    public static final int TYPE_EXIST_UNKNOWN_CARD = 212;
+    public static final int TYPE_EXPIRED_MFI = 207;
+    public static final int TYPE_FELICA_NOT_AVAILABLE = 55;
+    public static final int TYPE_GET_DEVICE_IDENTIFICATION_DATA_ERROR = 238;
+    public static final int TYPE_HTTP_COMMUNICATION_ERROR = 205;
+    public static final int TYPE_HTTP_ERROR = 203;
+    public static final int TYPE_IDM_NOT_EXIST = 241;
+    public static final int TYPE_ILLEGAL_CARD_OPERATION = 158;
+    public static final int TYPE_ILLEGAL_LINKAGE_DATA = 209;
+    public static final int TYPE_INITIALIZED_ERROR = 224;
+    public static final int TYPE_INITIALIZE_UNAVAILABLE = 239;
+    public static final int TYPE_INSIDE_TRANSIT_GATE_ERROR = 245;
+    public static final int TYPE_INSTANCE_NOT_VACANT = 237;
+    public static final int TYPE_INSUFFICIENT_ALLOCATED_FREE_SPACE = 242;
+    public static final int TYPE_INSUFFICIENT_CHIP_SPACE = 227;
+    public static final int TYPE_INTERRUPTED_ERROR = 215;
+    public static final int TYPE_INVALID_CODE_ERROR = 221;
+    public static final int TYPE_INVALID_ISSUE_INFORMATION = 231;
+    public static final int TYPE_INVALID_KEY_VERSION = 230;
+    public static final int TYPE_INVALID_LINKAGE_DATA = 210;
+    public static final int TYPE_INVALID_OTP = 232;
+    public static final int TYPE_INVALID_REQUEST_TOKEN = 226;
+    public static final int TYPE_INVALID_RESPONSE = 6;
+    public static final int TYPE_ISSUE_LIMIT_EXCEEDED = 213;
+    public static final int TYPE_ISSUE_LIMIT_PER_ACCOUNT_EXCEEDED = 234;
+    public static final int TYPE_ISSUE_LIMIT_PER_ACCOUNT_EXCEEDED_BY_MFI = 243;
+    public static final int TYPE_ISSUE_LIMIT_PER_DEVICE_EXCEEDED = 235;
+    public static final int TYPE_NOT_IC_CHIP_FORMATTING = 31;
+    public static final int TYPE_NOT_REISSUABLE = 233;
+    public static final int TYPE_NOT_SUPPORTED_CARD_OPERATION_ERROR = 244;
+    public static final int TYPE_NOT_SUPPORTED_CHIP_ERROR = 223;
+    public static final int TYPE_NOT_SUPPORTED_DEVICE_ERROR = 240;
+    public static final int TYPE_NOT_SUPPORTED_SERVICEID_ERROR = 171;
+    public static final int TYPE_OPEN_FAILED = 8;
+    public static final int TYPE_OPSRV_ACCOUNT_ERROR = 216;
+    public static final int TYPE_OPSRV_REQUIRED_LIB_UNAVAILABLE = 219;
+    public static final int TYPE_OPSRV_RESULT_ERROR = 217;
+    public static final int TYPE_OTHER_SP_CARD_EXIST = 236;
+    public static final int TYPE_PROTOCOL_ERROR = 202;
+    public static final int TYPE_READ_CONDITION_ERROR = 229;
+    public static final int TYPE_SERVER_CANNOT_RESPOND_ERROR = 204;
+    public static final int TYPE_SERVER_GENERAL_ERROR = 206;
+    public static final int TYPE_SE_ACCESS_ERROR = 225;
+    public static final int TYPE_UNACCEPTABLE_CARD_STATUS = 211;
+    public static final int TYPE_UNKNOWN_ERROR = 200;
+
+    void onError(int i, String str);
+}

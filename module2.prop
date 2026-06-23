@@ -1,0 +1,6 @@
+id=nfc_felica_patch
+name=NFC FeliCa Config
+version=1.0
+versionCode=1
+author=Antigravity
+description=Enables FeliCa routing in libnfc-nxp.conf

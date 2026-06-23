@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    id="selected">
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p501"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p502"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p503"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p504"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p505"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p506"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p507"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/p508"/>
+</animation-list>

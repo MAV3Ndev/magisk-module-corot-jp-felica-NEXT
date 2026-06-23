@@ -1,0 +1,44 @@
+package com.amazonaws.services.cognitoidentity.model.transform;
+
+import com.amazonaws.services.cognitoidentity.model.SetPrincipalTagAttributeMapResult;
+import com.amazonaws.transform.JsonUnmarshallerContext;
+import com.amazonaws.transform.MapUnmarshaller;
+import com.amazonaws.transform.SimpleTypeJsonUnmarshallers;
+import com.amazonaws.transform.Unmarshaller;
+import com.amazonaws.util.json.AwsJsonReader;
+
+/* JADX INFO: loaded from: classes.dex */
+public class SetPrincipalTagAttributeMapResultJsonUnmarshaller implements Unmarshaller<SetPrincipalTagAttributeMapResult, JsonUnmarshallerContext> {
+    private static SetPrincipalTagAttributeMapResultJsonUnmarshaller instance;
+
+    /* JADX DEBUG: Method merged with bridge method: unmarshall(Ljava/lang/Object;)Ljava/lang/Object; */
+    @Override // com.amazonaws.transform.Unmarshaller
+    public SetPrincipalTagAttributeMapResult unmarshall(JsonUnmarshallerContext jsonUnmarshallerContext) throws Exception {
+        SetPrincipalTagAttributeMapResult setPrincipalTagAttributeMapResult = new SetPrincipalTagAttributeMapResult();
+        AwsJsonReader reader = jsonUnmarshallerContext.getReader();
+        reader.beginObject();
+        while (reader.hasNext()) {
+            String strNextName = reader.nextName();
+            if (strNextName.equals("IdentityPoolId")) {
+                setPrincipalTagAttributeMapResult.setIdentityPoolId(SimpleTypeJsonUnmarshallers.StringJsonUnmarshaller.getInstance().unmarshall(jsonUnmarshallerContext));
+            } else if (strNextName.equals("IdentityProviderName")) {
+                setPrincipalTagAttributeMapResult.setIdentityProviderName(SimpleTypeJsonUnmarshallers.StringJsonUnmarshaller.getInstance().unmarshall(jsonUnmarshallerContext));
+            } else if (strNextName.equals("UseDefaults")) {
+                setPrincipalTagAttributeMapResult.setUseDefaults(SimpleTypeJsonUnmarshallers.BooleanJsonUnmarshaller.getInstance().unmarshall(jsonUnmarshallerContext));
+            } else if (strNextName.equals("PrincipalTags")) {
+                setPrincipalTagAttributeMapResult.setPrincipalTags(new MapUnmarshaller(SimpleTypeJsonUnmarshallers.StringJsonUnmarshaller.getInstance()).unmarshall(jsonUnmarshallerContext));
+            } else {
+                reader.skipValue();
+            }
+        }
+        reader.endObject();
+        return setPrincipalTagAttributeMapResult;
+    }
+
+    public static SetPrincipalTagAttributeMapResultJsonUnmarshaller getInstance() {
+        if (instance == null) {
+            instance = new SetPrincipalTagAttributeMapResultJsonUnmarshaller();
+        }
+        return instance;
+    }
+}

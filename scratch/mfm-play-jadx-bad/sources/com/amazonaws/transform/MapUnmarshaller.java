@@ -1,0 +1,32 @@
+package com.amazonaws.transform;
+
+import com.amazonaws.util.json.AwsJsonReader;
+import com.amazonaws.util.json.AwsJsonToken;
+import java.util.HashMap;
+import java.util.Map;
+
+/* JADX INFO: loaded from: classes3.dex */
+public class MapUnmarshaller<V> implements Unmarshaller<Map<String, V>, JsonUnmarshallerContext> {
+    private final Unmarshaller<V, JsonUnmarshallerContext> valueUnmarshaller;
+
+    public MapUnmarshaller(Unmarshaller<V, JsonUnmarshallerContext> unmarshaller) {
+        this.valueUnmarshaller = unmarshaller;
+    }
+
+    /* JADX DEBUG: Method merged with bridge method: unmarshall(Ljava/lang/Object;)Ljava/lang/Object; */
+    @Override // com.amazonaws.transform.Unmarshaller
+    public Map<String, V> unmarshall(JsonUnmarshallerContext jsonUnmarshallerContext) throws Exception {
+        AwsJsonReader reader = jsonUnmarshallerContext.getReader();
+        if (reader.peek() == AwsJsonToken.VALUE_NULL) {
+            reader.skipValue();
+            return null;
+        }
+        HashMap map = new HashMap();
+        reader.beginObject();
+        while (reader.hasNext()) {
+            map.put(reader.nextName(), this.valueUnmarshaller.unmarshall(jsonUnmarshallerContext));
+        }
+        reader.endObject();
+        return map;
+    }
+}

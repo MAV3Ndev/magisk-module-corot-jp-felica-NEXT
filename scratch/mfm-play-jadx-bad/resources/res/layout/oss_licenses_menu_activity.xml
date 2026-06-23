@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/oss_licenses_color_0099C6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_oss_menu"
+        android:background="@color/oss_licenses_color_0099C6"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:titleTextAppearance="@style/oss_licenses_TitleText"/>
+    <LinearLayout
+        android:background="@color/oss_licenses_color_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:scrollbarStyle="outsideOverlay"
+            android:id="@+id/lv_oss_menu_list"
+            android:background="@color/oss_licenses_color_white"
+            android:paddingLeft="16dp"
+            android:paddingTop="0dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="0dp"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="false"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/oss_licenses_dvidercoloer"
+            android:dividerHeight="1dp"
+            android:scrollbarDefaultDelayBeforeFade="5000"/>
+    </LinearLayout>
+</LinearLayout>

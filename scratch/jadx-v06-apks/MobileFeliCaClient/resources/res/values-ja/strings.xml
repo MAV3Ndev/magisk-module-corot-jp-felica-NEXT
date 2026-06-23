@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">モバイルFeliCaクライアント</string>
+    <string name="channel_name">モバイルFeliCaクライアント</string>
+    <string name="mfc_app_running_notification_text">タップすると詳細が表示されます。</string>
+    <string name="mfc_app_running_notification_title">モバイルFeliCaクライアントを実行しています。</string>
+    <string name="permission_desc">おサイフケータイの機能の利用をアプリケーションに許可します。</string>
+    <string name="permission_group_desc">おサイフケータイの利用をアプリケーションに許可します。</string>
+    <string name="permission_group_label">おサイフケータイ</string>
+    <string name="permission_label">おサイフケータイの機能を利用</string>
+</resources>

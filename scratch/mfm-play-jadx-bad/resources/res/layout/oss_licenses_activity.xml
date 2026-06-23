@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/oss_licenses_color_0099C6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_oss"
+        android:background="@color/oss_licenses_color_0099C6"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:titleTextAppearance="@style/oss_licenses_TitleText"/>
+    <LinearLayout
+        android:background="@color/oss_licenses_color_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/lv_oss"
+            android:background="@color/oss_licenses_color_white"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:scrollbarStyle="outsideOverlay"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/oss_licenses_textcolor_primary"
+                android:textColorLink="@color/oss_licenses_color_0099C6"
+                android:autoLink="web"
+                android:id="@+id/tv_oss"
+                android:background="@color/oss_licenses_color_white"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"/>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

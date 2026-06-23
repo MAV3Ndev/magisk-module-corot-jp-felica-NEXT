@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="BkgColor" format="reference">
+    </attr>
+    <attr name="DetailsTitleBkg" format="reference">
+    </attr>
+    <attr name="DialogBkg" format="reference">
+    </attr>
+    <attr name="DialogButton" format="reference">
+    </attr>
+    <attr name="DialogDivider" format="reference">
+    </attr>
+    <attr name="ScrollViewStyleDialog" format="reference">
+    </attr>
+    <attr name="ScrollViewStyleMain" format="reference">
+    </attr>
+    <attr name="TextSub16" format="reference">
+    </attr>
+    <attr name="TextSub20" format="reference">
+    </attr>
+    <attr name="alertDialogStyle" format="reference">
+    </attr>
+    <attr name="bottomBright" format="reference|color">
+    </attr>
+    <attr name="bottomDark" format="reference|color">
+    </attr>
+    <attr name="bottomMedium" format="reference|color">
+    </attr>
+    <attr name="centerBright" format="reference|color">
+    </attr>
+    <attr name="centerDark" format="reference|color">
+    </attr>
+    <attr name="centerMedium" format="reference|color">
+    </attr>
+    <attr name="fullBright" format="reference|color">
+    </attr>
+    <attr name="fullDark" format="reference|color">
+    </attr>
+    <attr name="topBright" format="reference|color">
+    </attr>
+    <attr name="topDark" format="reference|color">
+    </attr>
+</resources>

@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codex.felicaprobe">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="35" />
+
+    <uses-permission android:name="com.felicanetworks.mfc.permission.MFC_ACCESS" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:theme="@style/AppTheme"
+        android:label="FeliCa Probe"
+        android:allowBackup="false"
+        android:debuggable="true"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ProbeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

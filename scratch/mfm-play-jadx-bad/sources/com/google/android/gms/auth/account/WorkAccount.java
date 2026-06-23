@@ -1,0 +1,40 @@
+package com.google.android.gms.auth.account;
+
+import android.app.Activity;
+import android.content.Context;
+import com.google.android.gms.common.api.Api;
+import com.google.android.gms.internal.auth.zzal;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* JADX INFO: loaded from: classes3.dex */
+public class WorkAccount {
+    public static final Api<Api.ApiOptions.NoOptions> API;
+
+    @Deprecated
+    public static final WorkAccountApi WorkAccountApi;
+    private static final Api.ClientKey zza;
+    private static final Api.AbstractClientBuilder zzb;
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    static {
+        Api.ClientKey clientKey = new Api.ClientKey();
+        zza = clientKey;
+        zzf zzfVar = new zzf();
+        zzb = zzfVar;
+        API = new Api<>("WorkAccount.API", zzfVar, clientKey);
+        WorkAccountApi = new zzal();
+    }
+
+    private WorkAccount() {
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public static WorkAccountClient getClient(Activity activity) {
+        return new WorkAccountClient(activity);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 2 */
+    public static WorkAccountClient getClient(Context context) {
+        return new WorkAccountClient(context);
+    }
+}

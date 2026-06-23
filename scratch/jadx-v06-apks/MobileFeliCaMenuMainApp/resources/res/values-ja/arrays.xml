@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sg_02030404">
+        <item>http://osaifu.nttdocomo.co.jp/other/terms.html</item>
+        <item />
+        <item />
+        <item />
+    </array>
+    <array name="sg_02030498">
+        <item>file:///android_asset/d/ja/setting_tos.html</item>
+        <item>file:///android_asset/k/ja/setting_tos.html</item>
+        <item>file:///android_asset/s/ja/setting_tos.html</item>
+        <item>file:///android_asset/fn/ja/setting_tos.html</item>
+    </array>
+    <array name="sg_02030499">
+        <item>おサイフケータイアプリご利用規約、及びご利用規約に定める個人情報の取扱い、ならびに、ご利用規則に同意し、ICカードを設定します。</item>
+        <item>おサイフケータイアプリご利用規約、及びご利用規約に定める個人情報の取扱いに同意し、おサイフケータイを設定します。</item>
+        <item>おサイフケータイアプリご利用規約、及びご利用規約に定める個人情報の取扱いに同意し、おサイフケータイを設定します。</item>
+        <item>おサイフケータイアプリご利用規約、及びご利用規約に定める個人情報の取扱いに同意し、おサイフケータイを設定します。</item>
+    </array>
+    <array name="sg_020309B5">
+        <item>おサイフケータイなら便利な機能がもりだくさん！</item>
+        <item>おサイフケータイなら便利な機能がもりだくさん！</item>
+        <item>おサイフケータイなら便利な機能がもりだくさん！</item>
+    </array>
+</resources>

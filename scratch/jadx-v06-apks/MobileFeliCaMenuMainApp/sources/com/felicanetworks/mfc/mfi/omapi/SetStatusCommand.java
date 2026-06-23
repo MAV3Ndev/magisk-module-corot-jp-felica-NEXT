@@ -1,0 +1,92 @@
+package com.felicanetworks.mfc.mfi.omapi;
+
+import com.felicanetworks.mfc.mfi.felica.util.ByteBuffer;
+import com.felicanetworks.mfc.mfi.util.ObfuscatedMsgUtil;
+import com.felicanetworks.mfc.util.LogMgr;
+
+/* JADX INFO: loaded from: classes.dex */
+public class SetStatusCommand extends Command {
+    private static final byte CLA = -128;
+    private static final byte INS = -16;
+    private ByteBuffer mByteBuffer;
+    public static final byte[] ACTIVATE_P1P2 = {1, 1};
+    public static final byte[] DEACTIVATE_P1P2 = {1, 0};
+    private byte mP1 = 0;
+    private byte mP2 = 0;
+    private byte mLc = 0;
+    private byte[] mToken = null;
+    private byte mLe = 0;
+
+    SetStatusCommand() {
+    }
+
+    void setParameters(byte b, byte b2) {
+        LogMgr.log(5, "000");
+        this.mP1 = b;
+        this.mP2 = b2;
+    }
+
+    void setParameters(byte b, byte b2, byte b3, byte[] bArr) {
+        LogMgr.log(5, "000");
+        setParameters(b, b2);
+        this.mLc = b3;
+        this.mToken = bArr;
+    }
+
+    void setDataToken(byte[] bArr) {
+        LogMgr.log(5, "000");
+        if (bArr == null || bArr.length > 255) {
+            return;
+        }
+        this.mLc = (byte) bArr.length;
+        this.mToken = bArr;
+    }
+
+    void set(ByteBuffer byteBuffer) throws GpException {
+        if (byteBuffer == null) {
+            throw new GpException(200, ObfuscatedMsgUtil.executionPoint(), null);
+        }
+        LogMgr.log(5, "000");
+        this.mByteBuffer = byteBuffer;
+        byteBuffer.setLength(0);
+        this.mByteBuffer.append(new byte[]{CLA, INS, this.mP1, this.mP2});
+        byte b = this.mLc;
+        if (b != 0 && this.mToken != null) {
+            this.mByteBuffer.append(b);
+            this.mByteBuffer.append(this.mToken);
+        }
+        this.mByteBuffer.append(this.mLe);
+    }
+
+    @Override // com.felicanetworks.mfc.mfi.omapi.Command
+    Response execute() throws InterruptedException, GpException {
+        LogMgr.log(5, "000");
+        Response response = new Response();
+        try {
+            this.mGpController.select(this.mAid);
+            LogMgr.log(6, "001");
+            int length = this.mByteBuffer.getLength();
+            byte[] bArr = new byte[length];
+            this.mByteBuffer.copy(0, bArr, 0, length);
+            LogMgr.log(6, "002");
+            LogMgr.logArray(6, bArr);
+            try {
+                response.setResponse(this.mGpController.transmit(bArr));
+                LogMgr.log(5, "999");
+                return response.get();
+            } catch (GpException e) {
+                LogMgr.log(1, "801 : GpException");
+                throw e;
+            } catch (InterruptedException e2) {
+                LogMgr.log(1, "800 : InterruptedException");
+                throw e2;
+            }
+        } catch (GpException e3) {
+            LogMgr.log(1, "801 : GpException");
+            throw e3;
+        } catch (InterruptedException e4) {
+            LogMgr.log(1, "800 : InterruptedException");
+            throw e4;
+        }
+    }
+}

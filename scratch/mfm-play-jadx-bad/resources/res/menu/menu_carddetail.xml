@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/detail_popup_reload"
+        android:id="@+id/tool_card_detail_update"
+        android:orderInCategory="30"
+        android:title="@string/toolbar_option_menu_text_refresh"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/detail_popup_reload"
+        android:id="@+id/tool_card_detail_update_animation"
+        android:orderInCategory="20"
+        android:title="@string/toolbar_option_menu_text_refresh"
+        app:actionViewClass="com.felicanetworks.mfm.main.view.views.parts.UpdateButtonCardDetail"
+        app:showAsAction="always"/>
+</menu>
