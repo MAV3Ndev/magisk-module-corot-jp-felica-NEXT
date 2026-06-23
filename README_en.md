@@ -10,6 +10,15 @@ On HyperOS 3 / Android 16, Osaifu-Keitai loads FeliCa configuration from `/vendo
 
 KernelSU users must install `mountify` before installing this module. KernelSU's built-in Meta mount cannot mount new directories under `/vendor`, so Osaifu-Keitai keeps failing unless configuration is mounted through `mountify` (OverlayFS).
 
+#### Compatibility
+
+- Confirmed working on **HyperTN 3.3 Taiwan Version**.
+- Should also work on other custom ROMs like Xiaomi.eu (EuROM).
+
+#### Disclaimer & Credits
+
+This module was created and refactored with the assistance of **Gemini 3.1 Pro**. Please be aware that AI-generated code (AI Slop) may introduce unintended bugs. Please review the source code and use it at your **own risk**.
+
 #### NOTICE
 
 Do not add any FeliCa apps into Deny List.
