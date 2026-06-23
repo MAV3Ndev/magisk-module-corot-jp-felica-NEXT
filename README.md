@@ -1,24 +1,27 @@
+[English](README_en.md)
+
 #### FeliCa Enabler for corot (NEXT)
-FeliCa enable patch for Xiaomi 13T Pro Japan (23088PND5R).
+Xiaomi 13T Pro 日本版 (23088PND5R) 用の FeliCa (おサイフケータイ) 有効化パッチです。
 
-This module installs official Mobile FeliCa apps, FeliCa configuration files, Japanese model properties, and dummy Android framework files required for Osaifu-Keitai device support and initialization checks.
-Unlike the previous version, this NEXT version uses official unpatched APKs, allowing you to update the apps via the Google Play Store normally.
+このモジュールは、おサイフケータイのデバイスサポートと初期化チェックに必要な、**公式のモバイルFeliCaアプリ**、FeliCa設定ファイル、日本モデル用プロパティ、およびダミーのAndroidフレームワークファイルをインストールします。
+過去のバージョンとは異なり、この「NEXT」バージョンでは**無改造の公式APK**を使用しているため、Google Playストアからアプリを通常通りアップデートすることが可能です。
 
-On HyperOS 3 / Android 16, Osaifu-Keitai loads FeliCa configuration from `/vendor/etc/felica`. This module installs the files there.
+HyperOS 3 / Android 16 では、おサイフケータイは `/vendor/etc/felica` からFeliCa設定を読み込みます。本モジュールはこのパスに設定ファイルを配置します。
 
-KernelSU users must install `mountify` before installing this module. KernelSU's built-in Meta mount cannot mount new directories under `/vendor`, so Osaifu-Keitai keeps failing unless configuration is mounted through `mountify` (OverlayFS).
+**KernelSUユーザーは、このモジュールをインストールする前に `mountify` をインストールする必要があります。**
+KernelSU内蔵のMetaマウントは `/vendor` 配下に新しいディレクトリをマウントできないため、`mountify` (OverlayFS) 経由で設定をマウントしない限り、おサイフケータイのデバイスサポートチェックに失敗し続けます。
 
-#### NOTICE
+#### 注意事項
 
-Do not add any FeliCa apps into Deny List.
+FeliCa関連のアプリをDeny List (Magisk Hide等) に追加しないでください。
 
-After installation and reboot, Android should report these features:
+インストールして再起動した後、Androidで以下の機能が報告されることを確認してください：
 
 ```sh
 pm list features | grep -E 'android.hardware.nfc|android.hardware.se.omapi.ese'
 ```
 
-The FeliCa Client and configuration must also be visible:
+FeliCaクライアントと設定ファイルが可視状態になっているかも確認できます：
 
 ```sh
 pm path com.felicanetworks.mfc
